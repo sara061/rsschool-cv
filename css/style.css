@@ -2,6 +2,10 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   height: 100%;
+  background-image: url(../img/—Pngtree—abstract\ low\ poly\ design\ background_907931.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 html {
@@ -9,7 +13,6 @@ html {
 }
 img {
   width: 100%;
-  height: ;
 }
 
 h1,
@@ -23,14 +26,19 @@ h2 {
   padding: 15px 0;
   text-align: center;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 300px;
   color: gray;
 }
-.bx {
+.menu__nav {
+  display: flex;
+  justify-content: space-between;
 }
-.header_logo {
-  color: inherit;
+.list__nav {
+  list-style-type: none;
+}
+.nav {
   text-decoration: none;
+  color: darkolivegreen;
 }
 
 /*HERO*/
@@ -67,8 +75,6 @@ h2 {
   font-size: 32px;
   font-weight: 400;
 }
-.hero__description {
-}
 .hero__links {
   display: flex;
 }
@@ -87,7 +93,7 @@ h2 {
   max-width: 500px;
   justify-content: center;
   overflow: hidden;
-
+  margin-top: 200px;
   background-color: #f4d03f;
   background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
   animation: ava-animate 5s infinite alternate;
@@ -100,9 +106,9 @@ h2 {
   animation: ava-bg 3s infinite alternate;
 }
 
-@media screen and (max-width: 978px;) {
+@media screen and (max-width: 978px) {
   .hero {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .hero__container {
     grid-row-gap: 20px;
@@ -162,7 +168,15 @@ h2 {
 
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 110px;
+  margin-top: 90px;
+}
+
+/*About*/
+
+.about_text {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
 /*Experiance*/
@@ -170,12 +184,15 @@ h2 {
 .experience__container {
   margin-top: 100px;
   border-color: bisque;
+  border-radius: 10px;
+  box-shadow: auto;
 }
 .experience__list {
   display: flex;
   justify-content: space-between;
 }
 .experience__description {
+  font-weight: 500;
   list-style-type: none;
   margin-top: 20px;
   padding: 15px;
@@ -183,28 +200,22 @@ h2 {
 
 .subtitle1 {
   align-self: center;
-  background-color: olivedrab;
+  opacity: 0.5;
 }
 
 /*SKILLS*/
-
-.skills {
-}
 .skills__list {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
 }
 .skill {
+  font-size: xx-large;
   margin-top: 20px;
   padding: 15px;
 }
 
 /*languages*/
-
-.languages {
-}
-
 .list__languages {
   display: flex;
   justify-content: space-between;
@@ -212,14 +223,12 @@ h2 {
 }
 
 .language {
+  font-weight: 500;
   margin-top: 20px;
   padding: 15px;
 }
 
 /*code*/
-
-.code {
-}
 .code__example {
   margin-top: 20px;
   align-self: center;
@@ -235,6 +244,8 @@ h2 {
 }
 .footer__year {
   width: 100px;
+  opacity: 0.3;
+  border-radius: 20px;
 }
 .footer__about {
   margin-top: 40px;

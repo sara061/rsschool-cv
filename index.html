@@ -7,11 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Resume</title>
+    <title>Sara Rajabova</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header_logo logo">Sara Rajabova</a>
+    <header class="header container">
+        <nav class="menu__header">
+            <ul class="menu__nav">
+                <li class="list__nav"><a class="nav" href="#">Myself</a> </li>
+                <li class="list__nav"><a  class="nav" href="#">Skills</a> </li>
+                <li class="list__nav"><a class="nav" href="#">Code Example</a> </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="hero">
@@ -41,6 +47,12 @@
         </div>
         
         <section class="content_box container">
+            <div class="about content_box">
+                <h2 class="subtitle1 about">
+                   Myself
+                </h2>
+                <p class="about_text">I'm 24years old. I have for me a very difficult dream.I want become midle degree develop. I work on my mistakes and getting better than yesterday. I believe it.</p>
+            </div>
             <div class="experience__container content_box">
             <h2 class="subtitle1 experience">Experience</h2>
             <ul class="experience__list">
@@ -52,12 +64,14 @@
         <div class="skills container content_box ">
             <h2 class="subtitle1 skills">Skills</h2>
             <ul class="skills__list">
-                <li class="skill">HTML5</li>
-                <li class="skill">CSS3</li>
-                <li class="skill">JS basics</li>
-                <li class="skill">Git, Github</li>
-                <li class="skill">SASS</li>
-                <li class="skill">FIgma</li>
+                <li class="skill"><i class='bx bxl-html5'></i></li>
+                <li class="skill"><i class='bx bxl-css3' ></i></li>
+                <li class="skill">
+                    <i class='bx bxl-javascript'></i>
+                    </li>
+                <li class="skill"><i class='bx bxl-github' ></i></li>
+                <li class="skill"><i class='bx bxl-sass' ></i></li>
+                <li class="skill"><i class='bx bxl-figma' ></i></li>
             </ul>
         </div>
         <div class="languages container content_box">
@@ -97,5 +111,6 @@
             </div>
         </div>
     </footer>
+ 
 </body>
 </html>
