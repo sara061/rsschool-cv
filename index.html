@@ -13,31 +13,89 @@
     <header class="header">
         <a href="#" class="header_logo logo">Sara Rajabova</a>
     </header>
-
-    <div class="hero">
-        <div class="container hero__container">
-            <div class="hero__about">
-                <h1 class="hero__about">Frontend Developer</h1>
-                <h2 class="hero__subtitle">
-                    Sara Rajabova
-                </h2>
-                <p class="hero__description">Hi, i develop web applications. I will be glad to help you.</p>
-                <div class="hero__links">
-                    <a class="hero__links"  href="#">
-                        <i class='bx bxl-instagram'></i>
+    <main>
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__about">
+                    <h1 class="hero__title">Frontend Developer</h1>
+                    <h2 class="hero__subtitle">
+                        Sara Rajabova
+                    </h2>
+                    <p class="hero__description">Hi, i develop web applications. I will be glad to help you.</p>
+                    <div class="hero__links">
+                        <a class="hero__link"  href="#">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a class="hero__link"  href="#">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a class="hero__link"  href="#">
+                            <i class='bx bxl-telegram'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__box">
+                    <img src="./img/olivgruen_1-scaled.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <section class="content_box container">
+            <div class="experience__container content_box">
+            <h2 class="subtitle1 experience">Experience</h2>
+            <ul class="experience__list">
+                <li class="experience__description">FreeCodecamp JS basics </li>
+                <li class="experience__description">Udemy (Frontent Developer)</li>
+                <li class="experience__description">Germany course in Deutsche Schule,Munich </li>
+            </ul>
+            </div>
+        <div class="skills container content_box ">
+            <h2 class="subtitle1 skills">Skills</h2>
+            <ul class="skills__list">
+                <li class="skill">HTML5</li>
+                <li class="skill">CSS3</li>
+                <li class="skill">JS basics</li>
+                <li class="skill">Git, Github</li>
+                <li class="skill">SASS</li>
+                <li class="skill">FIgma</li>
+            </ul>
+        </div>
+        <div class="languages container content_box">
+            <h2 class="subtitle1 languages">Languages</h2>
+            <ul class="list__languages">
+                <li class="language">Germany</li>
+                <li class="language">Russian</li>
+                <li class="language">English</li>
+                <li class="language">Persian</li>
+            </ul>
+        </div>
+        <div class="code container content_box">
+            <h2 class="subtitle1">Code Example</h2><br>
+            <code class="code__example">
+                function getSums(arr){ <br>var temp = []; <br>var total = arr.reduce(function(sum, item){ <br>temp.push(sum); return sum + item; }); <br>temp.push(total);<br> return temp;}; 
+                <br>
+                alert(getSums([1,2,3,4,5])); // 1,3,6,10,15<br>
+                alert(getSums([-2,-1,0,1])); // -2,-3,-3,-2</code>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container footer_container">
+                <div class="footer__logo">
+                    <a href="https://rs.school/js/" class="logo footer__logo" target="_blank">
+                        <img src="./img/logo/rs_school_js.svg" alt="RS School">
                     </a>
-                    <a class="hero__links"  href="#">
-                        <i class='bx bxl-whatsapp'></i>
-                    </a>
-                    <a class="hero__links"  href="#">
-                        <i class='bx bxl-telegram'></i>
+                </div>
+                <img src="./img/istockphoto-1212040913-612x612.jpg" alt="2022" class="footer__year">
+                <div class="footer__about">
+                    <a href="https://github.com/sara061" class="mygithub" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        Me on Github
                     </a>
                 </div>
             </div>
-            <div class="hero__box">
-                <img src="./img/olivgruen_1-scaled.jpg" alt="">
-            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
